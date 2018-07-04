@@ -12,7 +12,7 @@
 	</div><!-- .col-full -->
 </div><!-- #content -->
 
-<div class="green">
+<div class="green margin50">
 	<div class="container">
 		<div class="row">
 			<div class="col s12">
@@ -29,12 +29,16 @@
 					</p>
 				</div>
 				<div class="col s12 l4 right margin20 padding40">
-					<ul class="white-text bold">
-						<li>MENU 1</li>
-						<li>MENU 1</li>
-						<li>MENU 1</li>
-						<li>MENU 1</li>
-						<li>MENU 1</li>
+					<p class="white-text bold right-align">MENU DE NAVEGAÇÃO</p>
+					<ul class="white-text bold right-align">
+						<li>HOME</li>
+						<li>O QUE É</li>
+						<li>PARA QUE SERVE</li>
+						<li>COMO COMPRAR</li>
+						<li>MÉDICOS</li>
+						<li>PRODUTOS</li>
+						<li>NOTÍCIAS</li>
+						<li>CONTATO</li>
 					</ul>
 				</div>
 			</div>
