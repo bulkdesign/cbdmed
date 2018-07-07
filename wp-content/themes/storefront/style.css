@@ -345,6 +345,10 @@ table td, table th{
 	text-align: center;
 }
 
+.card .card-action {
+	border-top: 1px solid #FFFFFF !important;
+}
+
 .cart input[type=number]:not(.browser-default){
 	margin-left: 150px;
 }
