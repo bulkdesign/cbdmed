@@ -12,7 +12,7 @@
 	</div><!-- .col-full -->
 </div><!-- #content -->
 
-<div class="green margin50">
+<div class="green">
 	<div class="container">
 		<div class="row">
 			<div class="col s12">

@@ -95,7 +95,7 @@
       </p>
     </div>
     <!-- CONTATO -->
-    <div class="col s12 m10 push-m1">
+    <div class="col s12 m10 push-m1 marginb50">
       <h1 class="green-text bold">Contato</h1>
       <p>
         Estamos aqui para lhe ajudar em todo o processo de compra do Epifractán.
