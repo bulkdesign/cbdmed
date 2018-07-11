@@ -1,13 +1,36 @@
-<?php /* Template Name: Blog */ ?>
+<?php /* Template Name: Notícias */ ?>
 
 <?php get_header(); ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<style type="text/css">
+
+.col-full {
+  max-width: 100%;
+  padding: 0;
+}
+  
+.contato {
+  width:100%;
+  height:300px;
+  text-align:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.contato h1 {
+  font-size:50px;
+  padding:10px 10px 0;
+}
+
+</style>
+<!-- TOPO -->
+<div class="contato" style="background: url('<?php bloginfo('template_url'); ?>/images/contato.jpg');background-size:cover;background-repeat: no-repeat;">
+  <h1 class="white-text bold">Notícias</h1>
+</div>
+<article class="margin50" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="container">
 		<div class="entry-content">
-			<h1 class="autem-text">BLOG ID BRASIL DIGITAL</h1>
-			<div class="divider"></div>
-			<br><br>
 			<div id="primary" class="content-area">
 				<main id="main" class="site-main" role="main">
 					<div class="row">
@@ -18,11 +41,11 @@
 							<div class="card hoverable">
 								<a href="<?php the_permalink();?>">
 							    	<div class="card-image">
-								    	<div class="card-action autem-text">
+								    	<div class="card-action green-text">
 							        		<?php the_post_thumbnail(); ?>
-							        		<h3><?php the_title();?></h3>
+							        		<h3 class="padding20"><?php the_title();?></h3>
 							        		<div class="divider"></div>
-							        		<?php the_excerpt() ?>           
+							        		<p><?php the_excerpt(); ?></p>         
 								      	</div>
 							    	</div>
 							  	</a>
@@ -37,4 +60,4 @@
 	</div>
 </article>
 
-<?php get_footer(); ?>
+<?php get_footer('home'); ?>

@@ -21,7 +21,7 @@
 
 <!-- FLOATING BUTTON -->
 <div class="fixed-action-btn">
-  <a class="btn-floating btn-large green">
+  <a href="<?php site_url(); ?>/?page_id=37" class="btn-floating btn-large green">
     <i class="large material-icons">email</i>
   </a>
 </div>
@@ -29,14 +29,14 @@
 <div class="parallax-container" style="height: 580px">
   <div class="chamada-inicio green-rgba z-depth-4">
     <h1 class="white-text bold">Qualidade de Vida, Saúde e Bem-Estar</h1>
-    <a href="<?php site_url(); ?>/contato" class="btn green bold">Saiba Mais</a>
+    <a href="<?php site_url(); ?>/?page_id=37" class="btn green bold">Saiba Mais</a>
   </div>
   <div class="parallax">
     <img src="<?php bloginfo('template_url'); ?>/images/capa.jpg">
   </div>
 </div>
 <!-- O QUE É -->
-<div class="parallax-container z-depth-4">
+<div id="oquee" class="parallax-container z-depth-4">
   <div class="row">
     <div class="col s12 l6 push-l1 margin140 left-align">
       <h1 class="white-text bold">O que é?</h1>
@@ -48,7 +48,7 @@
   </div>
 </div>
 <!-- PARA QUE SERVE -->
-<div class="parallax-container z-depth-4">
+<div id="paraqueserve" class="parallax-container z-depth-4">
   <div class="row">
     <div class="col s12 l6 pull-l1 right margin140 right-align">
       <h1 class="white-text bold">Para que serve?</h1>
@@ -65,7 +65,7 @@
     <div class="col s12 l6 push-l1 margin120 left-align">
       <h1 class="white-text bold">Como comprar?</h1>
       <p class="white-text">O Epifractán 2%, classificado como MEDICAMENTO, pois já é vendido a meses nas farmácias do Uruguai, chegará com um preço de USD 100,00 na casa do paciente (com todas as despesas já inclusas) o fracos de 10ml e o frasco de 30ml custará USD 200,00. Enquanto os outros medicamentos demoram em média 45 dias para chegar para o cliente após a compra, o Epifractán 2%, pelo fato do laboratório estar localizado no Uruguai, a logística é mais barata e mais rápida, podendo ser realizada a importação em até 10 dias.</p>
-      <a href="<?php site_url(); ?>/contato" class="btn green bold">Conheça o processo de compra</a>
+      <a href="<?php site_url(); ?>/?page_id=28" class="btn green bold">Conheça o processo de compra</a>
     </div>
   </div>
   <div class="parallax">

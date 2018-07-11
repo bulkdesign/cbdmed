@@ -8,7 +8,7 @@
   padding: 0;
 }
   
-.comocomprar {
+.medicos {
   width:100%;
   height:300px;
   text-align:center;
@@ -17,7 +17,7 @@
   align-items:center;
 }
 
-.comocomprar h1 {
+.medicos h1 {
   font-size:50px;
   padding:10px 10px 0;
 }
@@ -27,7 +27,7 @@
 <!-- <?php //$encartes = new WP_Query( array( 'post_type' => 'textos_encartes', 'posts_per_page' => '1' )); ?>
 <?php // while ( $encartes->have_posts() ) : $encartes->the_post(); ?> -->
   <!-- TOPO -->
-  <div class="comocomprar" style="background: url('<?php bloginfo('template_url'); ?>/images/medicos.jpg');background-size:cover;background-repeat: no-repeat;">
+  <div class="medicos" style="background: url('<?php bloginfo('template_url'); ?>/images/medicos.jpg');background-size:cover;background-repeat: no-repeat;">
     <h1 class="white-text bold">Médicos</h1>
   </div>
 
@@ -74,7 +74,7 @@
               <p class="white-text bold">Você pode também acessar o nosso blog para conferir maiores informações e artigos acerca do cannabidiol.</p>
             </div>
             <div class="card-action">
-              <a href="#" class="bold">Acesse o Blog</a>
+              <a href="<?php site_url(); ?>/?page_id=40" class="bold">Acesse o Blog</a>
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@
               <p class="white-text bold">Em caso de dúvidas, você também poderá entrar em contato conosco através do nosso formulário ou telefones:</p>
             </div>
             <div class="card-action">
-              <a href="#" class="bold">Entre em contato</a>
+              <a href="<?php site_url(); ?>/?page_id=37" class="bold">Entre em contato</a>
             </div>
           </div>
         </div>

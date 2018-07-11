@@ -30,15 +30,15 @@
 				</div>
 				<div class="col s12 l4 right margin20 padding40">
 					<p class="white-text bold right-align">MENU DE NAVEGAÇÃO</p>
-					<ul class="white-text bold right-align">
-						<li>HOME</li>
-						<li>O QUE É</li>
-						<li>PARA QUE SERVE</li>
-						<li>COMO COMPRAR</li>
-						<li>MÉDICOS</li>
-						<li>PRODUTOS</li>
-						<li>NOTÍCIAS</li>
-						<li>CONTATO</li>
+					<ul class="right-align links-rodape">
+						<li><a href="/">HOME</li>
+						<li><a href="/#oquee">O QUE É</li>
+						<li><a href="/#paraqueserve">PARA QUE SERVE</li>
+						<li><a href="<?php site_url(); ?>/?page_id=28/">COMO COMPRAR</li>
+						<li><a href="<?php site_url(); ?>/?page_id=31">MÉDICOS</li>
+						<li><a href="<?php site_url(); ?>/?page_id=34">PRODUTOS</li>
+						<li><a href="<?php site_url(); ?>/?page_id=40">NOTÍCIAS</li>
+						<li><a href="<?php site_url(); ?>/?page_id=37">CONTATO</li>
 					</ul>
 				</div>
 			</div>
@@ -51,7 +51,7 @@
 			<div class="col s12 padding20">
 				<h5 class="white-text">FG Brasil</h5>
 				<p class="grey-text text-lighten-4">Rua Emiliano Perneta, 680 - Sala 1504 - Curitiba, Paraná</p>
-				<a href="">Termos de Uso</a> | <a href="">Política de Privacidade</a> | <a href="">Política de Devolução</a>
+				<a href="<?php site_url(); ?>/?page_id=49">Termos de Uso</a> | <a href="<?php site_url(); ?>/?page_id=51">Política de Privacidade</a> | <a href="<?php site_url(); ?>/?page_id=53">Política de Devolução</a>
 			</div>
 		</div>
 	</div>
