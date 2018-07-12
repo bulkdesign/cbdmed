@@ -38,7 +38,7 @@
       <p>Você, como médico, pode prescrever óleo de cânhamo para qualquer tratamento que julgar apropriado.</p>
       <!-- FOTO PRODUTO -->
       <div class="col s12 padding40">
-        <div class="col s12 m3 push-m1">
+        <div class="col hide-on-small-only m3 push-m1">
           <img src="<?php bloginfo('template_url'); ?>/images/foto-produto.jpg">
         </div>
         <!-- TEXTOS -->
@@ -74,7 +74,7 @@
               <p class="white-text bold">Você pode também acessar o nosso blog para conferir maiores informações e artigos acerca do cannabidiol.</p>
             </div>
             <div class="card-action">
-              <a href="<?php site_url(); ?>/?page_id=40" class="bold">Acesse o Blog</a>
+              <a href="/cbdmed/?page_id=40" class="bold">Acesse o Blog</a>
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@
               <p class="white-text bold">Em caso de dúvidas, você também poderá entrar em contato conosco através do nosso formulário ou telefones:</p>
             </div>
             <div class="card-action">
-              <a href="<?php site_url(); ?>/?page_id=37" class="bold">Entre em contato</a>
+              <a href="/cbdmed/?page_id=37" class="bold">Entre em contato</a>
             </div>
           </div>
         </div>

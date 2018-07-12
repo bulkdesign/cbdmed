@@ -44,12 +44,12 @@
 
 				<div class="row" style="margin:0;">
 					<div class="col s12 hide-on-large-only">
-						<div class="col s9" style="margin-bottom:30px;">
+						<div class="col s9">
 							<?php storefront_site_title_or_logo(); ?>
 						</div>
 						<div class="col s1 right">
 							<main class="hide-on-large-only">
-								<a class="black-text toggle-overlay"><i class="small material-icons" style="margin: 10px -10px;">menu</i></a>
+								<a class="black-text toggle-overlay"><i class="small material-icons">menu</i></a>
 							</main>	
 
 							<aside>

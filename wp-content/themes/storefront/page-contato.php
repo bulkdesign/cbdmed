@@ -73,7 +73,7 @@ textarea, textarea:hover, textarea:active {
         Telefone: (41) 3015-5096<br>
         E-mail: comercial@fgbrasil.com<br>
         Rua Emiliano Perneta, 680 - Sala 1504 - Curitiba, Paraná</p>
-        <iframe class="left" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.03960417527!2d-49.28011848485485!3d-25.436939439396482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce473e85bfe3d%3A0xca5bd7889d3a178c!2sRua+Emiliano+Perneta%2C+680+-+Centro%2C+Curitiba+-+PR%2C+80420-080!5e0!3m2!1sen!2sbr!4v1531284795041" width="90%" height="360" frameborder="0" style="border:0"></iframe>
+        <iframe class="left marginb50" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.03960417527!2d-49.28011848485485!3d-25.436939439396482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce473e85bfe3d%3A0xca5bd7889d3a178c!2sRua+Emiliano+Perneta%2C+680+-+Centro%2C+Curitiba+-+PR%2C+80420-080!5e0!3m2!1sen!2sbr!4v1531284795041" width="100%" height="360" frameborder="0" style="border:0"></iframe>
   		</div>
       <div class="col s12 m6">
         <h1>Formulário</h1>

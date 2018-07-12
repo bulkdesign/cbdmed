@@ -66,7 +66,7 @@
           </div>
           <div class="card-content">
             <p class="white-text bold">Compre o Epifractán através do seguinte link:</p>
-            <a class="bold" href="#">Clique aqui.</a>
+            <a class="bold" href="/cbdmed/produtos">Clique aqui.</a>
           </div>
         </div>
       </div>
@@ -102,7 +102,7 @@
         <br>
         Em caso de dúvidas, entre em contato para que possamos melhor lhe auxiliar quanto ao procedimento e benefícios do CBD.
       </p>
-      <a href="<?php site_url(); ?>/?page_id=37" class="btn green-dark bold">ENTRAR EM CONTATO</a>
+      <a href="/cbdmed/?page_id=37" class="btn green-dark bold">ENTRAR EM CONTATO</a>
     </div>
   </div>
 </div>
