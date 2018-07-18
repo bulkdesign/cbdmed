@@ -107,18 +107,21 @@
       <h1 class="green-text margin60 bold produtos">Produtos</h1>
     </div>
     <div class="col s12 l8 push-l2">
-      <div class="col s12 m6">
-        <img src="<?php bloginfo('template_url'); ?>/images/produtos/epifractan-escena-10ml-2x100.jpg" />
-        <p>Epifractán 2%</p>
-        <h3 class="margin0">US$200,00</h3>
-        <a href="/cbdmed/contato" class="margin20 btn green bold">COMPRAR</a>
-      </div>
-      <div class="col s12 m6">
-        <img src="<?php bloginfo('template_url'); ?>/images/produtos/epifractan-escena-10ml-2x100.jpg" />
-        <p>Epifractán 2%</p>
-        <h3 class="margin0">US$200,00</h3>
-        <a href="/cbdmed/contato" class="margin20 btn green bold">COMPRAR</a>
-      </div>
+      <?php
+        $args = array('post_type' => 'product', 'posts_per_page' => 2);
+        $loop = new WP_Query( $args );
+        if ( $loop->have_posts() ) {
+          while ( $loop->have_posts() ) : $loop->the_post(); ?>
+            <div class="col s12 m6">
+              <?php wc_get_template_part( 'content', 'product' ); ?>
+            </div>
+            <?php
+          endwhile;
+        } else {
+          echo __( 'Nenhum produto foi encontrado' );
+        }
+        wp_reset_postdata();
+      ?>
     </div>
   </div>
 </div>

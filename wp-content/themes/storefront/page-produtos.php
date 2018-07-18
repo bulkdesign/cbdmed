@@ -35,21 +35,25 @@
       <div class="col s12 padding40">
         <p>Confira abaixo os nossos produtos e veja também todos os benefícios do Epifractán:</p>
         <!-- FOTO PRODUTO -->
-        <div class="col s12 padding40">
-          <div class="col m2"></div>
-          <div class="col s9 push-s2 m3 marginb50">
-            <img src="<?php bloginfo('template_url'); ?>/images/foto-produto.jpg">
-            <h3 class="margint20 marginb0 bold green-text">Epifractán 2%</h3>
-            <p class="green-text marginb0">Opções com 10ml ou 30ml</p>
-            <a href="/cbdmed/contato" class="btn green bold margin10">COMPRAR</a>
-          </div>
-          <div class="col m2"></div>
-          <div class="col s9 push-s2 m3">
-            <img src="<?php bloginfo('template_url'); ?>/images/foto-produto.jpg">
-            <h3 class="margint20 marginb0 bold green-text">Epifractán 5%</h3>
-            <p class="green-text marginb0">Opções com 10ml ou 30ml</p>
-            <a href="/cbdmed/contato" class="btn green bold margin10">COMPRAR</a>
-          </div>
+        <div class="col s12 margin50">
+          <?php
+            $args = array('post_type' => 'product', 'posts_per_page' => 2);
+            $loop = new WP_Query( $args );
+            if ( $loop->have_posts() ) {
+              while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                <div class="col s4 push-s2 marginb50">
+                  <?php wc_get_template_part( 'content', 'product' ); ?>
+                </div>
+                <?php
+              endwhile;
+            } else {
+              echo __( 'Nenhum produto foi encontrado' );
+            }
+            wp_reset_postdata();
+          ?>
+        </div>
+
+
         </div>
       </div>
     </div>
