@@ -25,14 +25,17 @@
     <i class="large material-icons">email</i>
   </a>
 </div>
+
+<?php $home = new WP_Query( array( 'post_type' => 'textos_home', 'posts_per_page' => '1' )); ?>
+<?php while ( $home->have_posts() ) : $home->the_post(); ?>
 <!-- DESTAQUE -->
 <div class="hide-on-small-only parallax-container" style="height: 580px">
   <div class="chamada-inicio green-rgba z-depth-4">
-    <h1 class="white-text bold">Qualidade de Vida, Saúde e Bem-Estar</h1>
-    <a href="/cbdmed/?page_id=37" class="btn green bold">Saiba Mais</a>
+    <h1 class="white-text bold"><?php the_field('frase_da_chamada'); ?></h1>
+    <a href="<?php the_field('link_do_botão'); ?>" class="btn green bold">Saiba Mais</a>
   </div>
   <div class="parallax">
-    <img src="<?php bloginfo('template_url'); ?>/images/capa.jpg">
+    <img src="<?php the_field('imagem_do_banner'); ?>">
   </div>
 </div>
 <!-- O QUE É -->
@@ -41,19 +44,19 @@
     <!-- DESKTOP -->
     <div class="col hide-on-med-and-down l6 push-l1 margin140 left-align">
       <h1 class="white-text bold">O que é?</h1>
-      <p class="white-text">O Epifractán é o único produto registrado como medicamento e não suplemento, possui testes realizados no Uruguai e já é comercializado em farmácias com  o preço mais em conta, comparado aos concorrentes. O CBD conquistou espaço na mídia a partir de 2014, quando uma mãe ganhou, na justiça, o direito de importar a substância, criança sofria com até 80 crises por semana e os medicamentos não surtiam o efeito desejado, o canabidiol praticamente zerou as crises da garota.</p>
+      <span class="white-text"><?php the_field('o_que_e'); ?></span>
     </div>
     <!-- MED AND DOWN -->
     <div class="col hide-on-large-only paddings1 s12 m6 push-m1 margin50 marginb50 left-align">
       <h1 class="white-text bold">O que é?</h1>
-      <p class="white-text">O Epifractán é o único produto registrado como medicamento e não suplemento, possui testes realizados no Uruguai e já é comercializado em farmácias com  o preço mais em conta, comparado aos concorrentes. O CBD conquistou espaço na mídia a partir de 2014, quando uma mãe ganhou, na justiça, o direito de importar a substância, criança sofria com até 80 crises por semana e os medicamentos não surtiam o efeito desejado, o canabidiol praticamente zerou as crises da garota.</p>
+      <span class="white-text"><?php the_field('o_que_e'); ?></span>
     </div>
   </div>
   <div class="col hide-on-small-only parallax">
-    <img src="<?php bloginfo('template_url'); ?>/images/section1.jpg">
+    <img src="<?php the_field('imagem_de_fundo_1'); ?>">
   </div>
   <div class="col hide-on-med-and-up parallax">
-    <img src="<?php bloginfo('template_url'); ?>/images/section1-mobile.jpg">
+    <img src="<?php the_field('imagem_de_fundo_1_mobile'); ?>">
   </div>
 </div>
 <!-- PARA QUE SERVE -->
@@ -62,19 +65,19 @@
     <!-- DESKTOP -->
     <div class="col hide-on-med-and-down l6 pull-l1 margin140 right right-align">
       <h1 class="white-text bold">Para que serve?</h1>
-      <p class="white-text">O canabidiol, também conhecido por CBD, é um dos princípios ativos da Cannabis sativa, nome científico da maconha. Compõe até 40% dos extratos da planta e pode ser usado como medicamento para diversas doenças, que variam de epilepsia severa a fibromialgia. É uma substância canabinoide (que age nos receptores canabinóides do cérebro).</p>
+      <span class="white-text"><?php the_field('para_que_serve'); ?></span>
     </div>
     <!-- MED AND DOWN -->
     <div class="col hide-on-large-only paddings1 s12 m6 pull-m1 margin50 marginb50 right right-align">
       <h1 class="white-text bold">Para que serve?</h1>
-      <p class="white-text">O canabidiol, também conhecido por CBD, é um dos princípios ativos da Cannabis sativa, nome científico da maconha. Compõe até 40% dos extratos da planta e pode ser usado como medicamento para diversas doenças, que variam de epilepsia severa a fibromialgia. É uma substância canabinoide (que age nos receptores canabinóides do cérebro).</p>
+      <span class="white-text"><?php the_field('para_que_serve'); ?></span>
     </div>
   </div>
   <div class="col hide-on-small-only parallax">
-    <img src="<?php bloginfo('template_url'); ?>/images/section2.jpg">
+    <img src="<?php the_field('imagem_de_fundo_2'); ?>">
   </div>
   <div class="col hide-on-med-and-up parallax">
-    <img src="<?php bloginfo('template_url'); ?>/images/section2-mobile.jpg">
+    <img src="<?php the_field('imagem_de_fundo_2_mobile'); ?>">
   </div>
 </div>
 <!-- COMO COMPRAR -->
@@ -83,21 +86,21 @@
     <!-- DESKTOP -->
     <div class="col hide-on-med-and-down l6 push-l1 margin120 left-align">
       <h1 class="white-text bold">Como comprar?</h1>
-      <p class="white-text">O Epifractán 2%, classificado como MEDICAMENTO, pois já é vendido a meses nas farmácias do Uruguai, chegará com um preço de USD 100,00 na casa do paciente (com todas as despesas já inclusas) o fracos de 10ml e o frasco de 30ml custará USD 200,00. Enquanto os outros medicamentos demoram em média 45 dias para chegar para o cliente após a compra, o Epifractán 2%, pelo fato do laboratório estar localizado no Uruguai, a logística é mais barata e mais rápida, podendo ser realizada a importação em até 10 dias.</p>
+      <span class="white-text"><?php the_field('como_comprar'); ?></span>
       <a href="/cbdmed/?page_id=28" class="btn green bold">Conheça o processo de compra</a>
     </div>
     <!-- MED AND DOWN -->
     <div class="col hide-on-large-only paddings1 s12 m6 push-m1 margin50 marginb50 left-align">
       <h1 class="white-text bold">Como comprar?</h1>
-      <p class="white-text">O Epifractán 2%, classificado como MEDICAMENTO, pois já é vendido a meses nas farmácias do Uruguai, chegará com um preço de USD 100,00 na casa do paciente (com todas as despesas já inclusas) o fracos de 10ml e o frasco de 30ml custará USD 200,00. Enquanto os outros medicamentos demoram em média 45 dias para chegar para o cliente após a compra, o Epifractán 2%, pelo fato do laboratório estar localizado no Uruguai, a logística é mais barata e mais rápida, podendo ser realizada a importação em até 10 dias.</p>
+      <span class="white-text"><?php the_field('como_comprar'); ?></span>
       <a href="/cbdmed/?page_id=28" class="btn green bold">Conheça o processo de compra</a>
     </div>
   </div>
   <div class="col hide-on-small-only parallax">
-    <img src="<?php bloginfo('template_url'); ?>/images/section3.jpg">
+    <img src="<?php the_field('imagem_de_fundo_3'); ?>">
   </div>
   <div class="col hide-on-med-and-up parallax">
-    <img src="<?php bloginfo('template_url'); ?>/images/section3-mobile.jpg">
+    <img src="<?php the_field('imagem_de_fundo_3_mobile'); ?>">
   </div>
 </div>
 <!-- PRODUTOS -->
@@ -125,6 +128,9 @@
     </div>
   </div>
 </div>
+<?php endwhile; ?>
+<?php wp_reset_query(); ?>
+
 <!-- DEPOIMENTOS -->
 <div class="container margin30 marginb50">
   <div class="row">
@@ -132,21 +138,15 @@
       <h1 class="green-text margin40 bold produtos">Depoimentos</h1>
     </div>
     <div class="col s12 l10 push-l1 margin40">
-      <div class="col s12 m4">
-        <img src="https://stromkacentrum.blog/wp-content/uploads/2017/10/circle-person02.png" width="130" class="image-center" />
-        <h3 class="margin20">João Alfredo</h3>
-        <p>A bunch of text right here talking about the product.</p>
-      </div>
-      <div class="col s12 m4">
-        <img src="https://stromkacentrum.blog/wp-content/uploads/2017/10/circle-person02.png" width="130" class="image-center" />
-        <h3 class="margin20">João Alfredo</h3>
-        <p>A bunch of text right here talking about the product.</p>
-      </div>
-      <div class="col s12 m4">
-        <img src="https://stromkacentrum.blog/wp-content/uploads/2017/10/circle-person02.png" width="130" class="image-center" />
-        <h3 class="margin20">João Alfredo</h3>
-        <p>A bunch of text right here talking about the product.</p>
-      </div>
+      <?php $depoimentos = new WP_Query( array( 'post_type' => 'depoimentos', 'posts_per_page' => '3' )); ?>
+        <?php while ( $depoimentos->have_posts() ) : $depoimentos->the_post(); ?>
+          <div class="col s12 m4">
+            <img src="<?php the_field('foto'); ?>" width="130" class="image-center" />
+            <h3 class="margin20"><?php the_field('nome_do_cliente'); ?></h3>
+            <p><?php the_field('texto_de_depoimento'); ?></p>
+          </div>
+        <?php endwhile; ?>
+      <?php wp_reset_query(); ?>
     </div>
   </div>
 </div>
