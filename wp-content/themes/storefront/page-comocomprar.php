@@ -24,18 +24,17 @@
 
 </style>
 
-<!-- <?php //$encartes = new WP_Query( array( 'post_type' => 'textos_encartes', 'posts_per_page' => '1' )); ?>
-<?php // while ( $encartes->have_posts() ) : $encartes->the_post(); ?> -->
+<?php $comocomprar = new WP_Query( array( 'post_type' => 'como_comprar', 'posts_per_page' => '1' )); ?>
+<?php while ( $comocomprar->have_posts() ) : $comocomprar->the_post(); ?>
   <!-- TOPO -->
-  <div class="comocomprar" style="background: url('<?php bloginfo('template_url'); ?>/images/section2.jpg');background-size:cover;background-repeat: no-repeat;">
-    <h1 class="white-text bold">Como Comprar o Epifractán?</h1>
+  <div class="comocomprar" style="background: url('<?php the_field('imagem_do_topo'); ?>');background-size:cover;background-repeat: no-repeat;">
+    <h1 class="white-text bold"><?php the_field('titulo_da_pagina'); ?></h1>
   </div>
-
 
 <div class="container">
   <div class="row">
     <div class="col s12 padding40">
-      <p>Confira abaixo em três etapas como realizar a compra do Epifractán no Brasil:</p>
+      <p><?php the_field('descrição_inicial'); ?></p>
       <!-- PASSO 1 -->
       <div class="col s12 m4">
         <div class="card green">
@@ -43,7 +42,7 @@
             <h1 class="white-text padding20 bold">PASSO 1</h1>
           </div>
           <div class="card-content">
-            <p class="white-text bold">Consulte seu médico para conseguir uma prescrição e um laudo médico.</p>
+            <span class="white-text bold"><?php the_field('passo_1'); ?></span>
           </div>
         </div>
       </div>
@@ -54,8 +53,7 @@
             <h1 class="white-text padding20 bold">PASSO 2</h1>
           </div>
           <div class="card-content">
-            <p class="white-text bold">Compre o Epifractán através do seguinte link:</p>
-            <a class="bold" href="/cbdmed/produtos">Clique aqui.</a>
+            <span class="white-text bold"><?php the_field('passo_2'); ?></span>
           </div>
         </div>
       </div>
@@ -66,47 +64,30 @@
             <h1 class="white-text padding20 bold">PASSO 3</h1>
           </div>
           <div class="card-content">
-            <p class="white-text bold">Envie-nos as cópias dos seus documentos para finalizarmos o pedido.</p>
+            <span class="white-text bold"><?php the_field('passo_3'); ?></span>
           </div>
         </div>
       </div>
     </div>
     <!-- FINALIZAÇÃO DO PEDIDO -->
     <div class="col s12 m10 push-m1">
-      <h1 class="green-text bold">Finalização do pedido</h1>
-      <p class="left-align padding20">
-        Com a autorização de importação da ANVISA em mãos você poderá visitar a seção PRODUTOS de nossa página para fazer sua compra ou nos chamar por telefone.
-        <br><br>
-        Ao finalizar seu pedido será necessário incluir cópias dos seguintes documentos:
-        <ol>
-          <li class="left-align">Prescrição médica</li>
-          <li class="left-align">Carta de Autorização da ANVISA</li>
-          <li class="left-align">Documento de identificação do paciente e responsável legal (caso se aplique)</li>
-        </ol>
-      </p>
+      <h1 class="green-text bold"><?php the_field('titulo_2'); ?></h1>
+      <?php the_field('texto_2'); ?>
     </div>
     <!-- FORMAS DE PAGAMENTO -->
     <div class="col s12 m10 push-m1 padding40">
-      <h1 class="green-text bold">Formas de Pagamento</h1>
-      <p class="left-align padding20">
-        Aceitamos cartões de crédito ou transferência via PayPal.
-        <br><br>
-        O governo brasileiro tomou medidas para subsidiar o Epifractán no sistema público de saúde. Entretanto, os pacientes que gostariam de ter o canabidiol custeado pelo governo devem primeiro contatar a Defensoria Pública do seu estado e provar que não têm condições de arcar com os custos do tratamento.
-      </p>
+      <h1 class="green-text bold"><?php the_field('titulo_3'); ?></h1>
+      <?php the_field('texto_3'); ?>
     </div>
     <!-- CONTATO -->
     <div class="col s12 m10 push-m1 marginb50">
-      <h1 class="green-text bold">Contato</h1>
-      <p>
-        Estamos aqui para lhe ajudar em todo o processo de compra do Epifractán.
-        <br>
-        Em caso de dúvidas, entre em contato para que possamos melhor lhe auxiliar quanto ao procedimento e benefícios do CBD.
-      </p>
-      <a href="/cbdmed/?page_id=37" class="btn green-dark bold">ENTRAR EM CONTATO</a>
+      <h1 class="green-text bold"><?php the_field('titulo_4'); ?></h1>
+      <?php the_field('texto_4'); ?>
+      <a href="<?php the_field('link_do_botão'); ?>" class="btn green-dark bold">ENTRAR EM CONTATO</a>
     </div>
   </div>
 </div>
-<!-- <?php // endwhile; ?>
-<?php // wp_reset_query(); ?> -->
+<?php endwhile; ?>
+<?php wp_reset_query(); ?>
 
 <?php get_footer('home'); ?>

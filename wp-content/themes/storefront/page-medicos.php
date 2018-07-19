@@ -24,43 +24,26 @@
 
 </style>
 
-<!-- <?php //$encartes = new WP_Query( array( 'post_type' => 'textos_encartes', 'posts_per_page' => '1' )); ?>
-<?php // while ( $encartes->have_posts() ) : $encartes->the_post(); ?> -->
+<?php $medicos = new WP_Query( array( 'post_type' => 'para_medicos', 'posts_per_page' => '1' )); ?>
+<?php while ( $medicos->have_posts() ) : $medicos->the_post(); ?>
   <!-- TOPO -->
-  <div class="medicos" style="background: url('<?php bloginfo('template_url'); ?>/images/medicos.jpg');background-size:cover;background-repeat: no-repeat;">
-    <h1 class="white-text bold">Médicos</h1>
+  <div class="medicos" style="background: url('<?php the_field('imagem_do_topo'); ?>');background-size:cover;background-repeat: no-repeat;">
+    <h1 class="white-text bold"><?php the_field('titulo_da_pagina'); ?></h1>
   </div>
-
 
 <div class="container">
   <div class="row">
     <div class="col s12 padding40">
-      <p>Você, como médico, pode prescrever óleo de cânhamo para qualquer tratamento que julgar apropriado.</p>
+      <p><?php the_field('descrição'); ?></p>
       <!-- FOTO PRODUTO -->
       <div class="col s12 padding40">
         <div class="col hide-on-small-only m3 push-m1">
-          <img src="<?php bloginfo('template_url'); ?>/images/foto-produto.jpg">
+          <img src="<?php the_field('foto_do_produto'); ?>">
         </div>
         <!-- TEXTOS -->
         <div class="col s12 m7 push-m1 left-align">
-          <h1 class="green-text bold">Informações sobre prescrição médica:</h1>
-          <p>
-            Os médicos interessados em receitar o RSHO™ no Brasil devem instruir seus pacientes a fornecer as seguintes informações à ANVISA:
-            <br><br>
-            <span class="bold">1. Seu paciente precisa de um laudo médico explicando o motivo do uso do canabidiol como opção de tratamento.</span>
-            <br>
-            <span class="bold">2. Uma prescrição para o Real Scientific Hemp Oil™, incluindo:</span>
-            <br>
-            <ol>
-              <li>Nome do paciente</li>
-              <li>Nome do medicamento</li>
-              <li>Quantidade necessária</li>
-              <li>Duração do tratamento</li>
-              <li>Data da receita</li>
-              <li>Assinatura e carimbo do médico (com CRM)</li>
-            </ol>
-            <span class="bold">3. Com a prescrição e o laudo médico em mãos o paciente pode solicitar a autorização junto à ANVISA através de um ofício de importação. Uma vez aprovada, seu paciente poderá então comprar o RSHO™ diretamente em nossa loja virtual.</span>
-          </p>
+          <h1 class="green-text bold"><?php the_field('titulo_1'); ?></h1>
+          <?php the_field('texto_1'); ?>
         </div>
       </div>
       <!-- COMO BUSCAR ESSE REMEDIO NA JUSTICA -->
@@ -68,10 +51,10 @@
         <div class="col s12">
           <div class="card green">
             <div class="card-image">
-              <h1 class="white-text padding20 bold">Como buscar esse medicamento na Justiça</h1>
+              <h1 class="white-text padding20 bold"><?php the_field('titulo_2'); ?></h1>
             </div>
             <div class="card-content">
-              <p class="white-text bold">O governo brasileiro tomou medidas para subsidiar o Epifractán no sistema público de saúde. Entretanto, os pacientes que gostariam de ter o canabidiol custeado pelo governo devem primeiro contatar a Defensoria Pública do seu estado e provar que não têm condições de arcar com os custos do tratamento.</p>
+              <span class="white-text bold"><?php the_field('texto_2'); ?></span>
             </div>
           </div>
         </div>
@@ -81,13 +64,13 @@
         <div class="col s12 m6">
           <div class="card green hoverable">
             <div class="card-image">
-              <h1 class="white-text padding20 bold">Referências no Blog</h1>
+              <h1 class="white-text padding20 bold"><?php the_field('titulo_3'); ?></h1>
             </div>
             <div class="card-content">
-              <p class="white-text bold">Você pode também acessar o nosso blog para conferir maiores informações e artigos acerca do cannabidiol.</p>
+              <span class="white-text bold"><?php the_field('texto_3'); ?></span>
             </div>
             <div class="card-action">
-              <a href="/cbdmed/?page_id=40" class="bold">Acesse o Blog</a>
+              <a href="<?php the_field('link_blog'); ?>" class="bold">Acesse o Blog</a>
             </div>
           </div>
         </div>
@@ -95,13 +78,13 @@
         <div class="col s12 m6">
           <div class="card green hoverable">
             <div class="card-image">
-              <h1 class="white-text padding20 bold">Contato</h1>
+              <h1 class="white-text padding20 bold"><?php the_field('titulo_4'); ?></h1>
             </div>
             <div class="card-content">
-              <p class="white-text bold">Em caso de dúvidas, você também poderá entrar em contato conosco através do nosso formulário ou telefones:</p>
+              <span class="white-text bold"><?php the_field('texto_4'); ?></span>
             </div>
             <div class="card-action">
-              <a href="/cbdmed/?page_id=37" class="bold">Entre em contato</a>
+              <a href="<?php the_field('link_contato'); ?>" class="bold">Entre em contato</a>
             </div>
           </div>
         </div>
@@ -109,7 +92,7 @@
     </div>
   </div>
 </div>
-<!-- <?php // endwhile; ?>
-<?php // wp_reset_query(); ?> -->
+<?php endwhile; ?>
+<?php wp_reset_query(); ?>
 
 <?php get_footer('home'); ?>
