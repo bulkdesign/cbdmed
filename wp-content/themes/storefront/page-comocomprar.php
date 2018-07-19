@@ -54,7 +54,8 @@
             <h1 class="white-text padding20 bold">PASSO 2</h1>
           </div>
           <div class="card-content">
-            <p class="white-text bold">Obtenha sua autorização de importação da ANVISA clicando <a class="bold" href="http://formsus.datasus.gov.br/site/formulario.php?id_aplicacao=19489">aqui.</a></p>
+            <p class="white-text bold">Compre o Epifractán através do seguinte link:</p>
+            <a class="bold" href="/cbdmed/produtos">Clique aqui.</a>
           </div>
         </div>
       </div>
@@ -65,8 +66,7 @@
             <h1 class="white-text padding20 bold">PASSO 3</h1>
           </div>
           <div class="card-content">
-            <p class="white-text bold">Compre o Epifractán através do seguinte link:</p>
-            <a class="bold" href="/cbdmed/produtos">Clique aqui.</a>
+            <p class="white-text bold">Envie-nos as cópias dos seus documentos para finalizarmos o pedido.</p>
           </div>
         </div>
       </div>
