@@ -63,6 +63,19 @@
           </p>
         </div>
       </div>
+      <!-- COMO BUSCAR ESSE REMEDIO NA JUSTICA -->
+      <div class="col s12">
+        <div class="col s12">
+          <div class="card green">
+            <div class="card-image">
+              <h1 class="white-text padding20 bold">Como buscar esse medicamento na Justiça</h1>
+            </div>
+            <div class="card-content">
+              <p class="white-text bold">O governo brasileiro tomou medidas para subsidiar o Epifractán no sistema público de saúde. Entretanto, os pacientes que gostariam de ter o canabidiol custeado pelo governo devem primeiro contatar a Defensoria Pública do seu estado e provar que não têm condições de arcar com os custos do tratamento.</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="col s12">
         <!-- BLOG -->
         <div class="col s12 m6">
