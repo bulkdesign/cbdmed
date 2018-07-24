@@ -24,23 +24,23 @@
 			<header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
 				<div class="container">
 					<div class="row hide-on-med-and-down" style="margin:0;">
-						<div class="col l2 hide-on-med-and-down">
-							<?php storefront_site_title_or_logo(); ?>
-						</div>
-						<div class="col hide-on-med-and-down l9 right">
-							<?php do_action( 'storefront_header' ); ?>
-						</div>
-						<div class="hide">
-							<ul id="site-header-cart" class="site-header-cart menu">
-								<li class="<?php echo esc_attr( $class ); ?>">
-									<?php storefront_cart_link(); ?>
-								</li>
-								<li>
-									<?php the_widget( 'WC_Widget_Cart', 'title=' ); ?>
-								</li>
-							</ul>
+						<div class="col s12">
+							<div class="col l2 hide-on-med-and-down">
+								<?php storefront_site_title_or_logo(); ?>
+							</div>
+							<div class="col hide-on-med-and-down l8 push-l1">
+								<?php do_action( 'storefront_header' ); ?>
+							</div>
+							<div class="col hide-on-med-and-down l1 right">
+								<ul id="site-header-cart" class="site-header-cart menu">
+									<li class="<?php echo esc_attr( $class ); ?>">
+										<?php storefront_cart_link(); ?>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
+				</div>
 
 				<div class="row" style="margin:0;">
 					<div class="col s12 hide-on-large-only">

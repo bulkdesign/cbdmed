@@ -9,7 +9,7 @@
   padding: 0;
 }
   
-.contato {
+.noticias {
   width:100%;
   height:300px;
   text-align:center;
@@ -18,14 +18,14 @@
   align-items:center;
 }
 
-.contato h1 {
+.noticias h1 {
   font-size:50px;
   padding:10px 10px 0;
 }
 
 </style>
 <!-- TOPO -->
-<div class="contato" style="background: url('<?php bloginfo('template_url'); ?>/images/contato.jpg');background-size:cover;background-repeat: no-repeat;">
+<div class="noticias" style="background: url('<?php bloginfo('template_url'); ?>/images/blog.jpg');background-size:cover;background-repeat: no-repeat;">
   <h1 class="white-text bold">Notícias</h1>
 </div>
 <article class="margin50" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

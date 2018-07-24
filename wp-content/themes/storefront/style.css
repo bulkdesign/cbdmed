@@ -541,11 +541,6 @@ ul.page-numbers {
 	border: 1px solid #ccc!important;
 }
 
-#order_review {
-	width: 100% !important;
-	float: left !important;
-}
-
 /*MEDIA QUERY*/
 @media(max-width: 500px) {
 	.paddings1 {

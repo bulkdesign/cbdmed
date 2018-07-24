@@ -31,14 +31,14 @@
 				<div class="col hide-on-med-and-down l4 right margin20 padding40">
 					<p class="white-text bold right-align">MENU DE NAVEGAÇÃO</p>
 					<ul class="right-align links-rodape">
-						<li><a href="/cbdmed/">HOME</li>
-						<li><a href="/cbdmed/#oquee">O QUE É</li>
-						<li><a href="/cbdmed/#paraqueserve">PARA QUE SERVE</li>
-						<li><a href="/cbdmed/?page_id=28/">COMO COMPRAR</li>
-						<li><a href="/cbdmed/?page_id=31">MÉDICOS</li>
-						<li><a href="/cbdmed/?page_id=34">PRODUTOS</li>
-						<li><a href="/cbdmed/?page_id=40">NOTÍCIAS</li>
-						<li><a href="/cbdmed/?page_id=37">CONTATO</li>
+						<li><a href="/">HOME</li>
+						<li><a href="/#oquee">O QUE É</li>
+						<li><a href="/#paraqueserve">PARA QUE SERVE</li>
+						<li><a href="/como-comprar">COMO COMPRAR</li>
+						<li><a href="/medicos">MÉDICOS</li>
+						<li><a href="/produtos">PRODUTOS</li>
+						<li><a href="/noticias">NOTÍCIAS</li>
+						<li><a href="/contato">CONTATO</li>
 					</ul>
 				</div>
 			</div>
@@ -51,7 +51,7 @@
 			<div class="col s12 padding20">
 				<h5 class="white-text">FG Brasil</h5>
 				<p class="grey-text text-lighten-4">Rua Emiliano Perneta, 680 - Sala 1504 - Curitiba, Paraná</p>
-				<a href="<?php site_url(); ?>/?page_id=49">Termos de Uso</a> | <a href="<?php site_url(); ?>/?page_id=51">Política de Privacidade</a> | <a href="<?php site_url(); ?>/?page_id=53">Política de Devolução</a>
+				<a href="/termos-de-uso">Termos de Uso</a> | <a href="/politica-de-privacidade">Política de Privacidade</a> | <a href="politica-de-devolucao">Política de Devolução</a>
 			</div>
 		</div>
 	</div>
