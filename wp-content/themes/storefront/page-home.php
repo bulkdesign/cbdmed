@@ -39,10 +39,10 @@
   </div>
 </div>
 <!-- O QUE É -->
-<div id="oquee" class="parallax-container z-depth-4">
+<div id="oquee" class="parallax-container z-depth-4 hauto">
   <div class="row">
     <!-- DESKTOP -->
-    <div class="col hide-on-med-and-down l6 push-l1 margin140 left-align">
+    <div class="col hide-on-med-and-down l6 push-l1 left-align">
       <h1 class="white-text bold">O que é?</h1>
       <span class="white-text"><?php the_field('o_que_e'); ?></span>
     </div>
@@ -60,10 +60,10 @@
   </div>
 </div>
 <!-- PARA QUE SERVE -->
-<div id="paraqueserve" class="parallax-container z-depth-4">
+<div id="paraqueserve" class="parallax-container z-depth-4 hauto">
   <div class="row">
     <!-- DESKTOP -->
-    <div class="col hide-on-med-and-down l6 pull-l1 margin140 right right-align">
+    <div class="col hide-on-med-and-down l6 pull-l1 right right-align">
       <h1 class="white-text bold">Para que serve?</h1>
       <span class="white-text"><?php the_field('para_que_serve'); ?></span>
     </div>
@@ -84,7 +84,7 @@
 <div class="parallax-container">
   <div class="row">
     <!-- DESKTOP -->
-    <div class="col hide-on-med-and-down l6 push-l1 margin120 left-align">
+    <div class="col hide-on-med-and-down l6 push-l1 margin140 left-align">
       <h1 class="white-text bold">Como comprar?</h1>
       <span class="white-text"><?php the_field('como_comprar'); ?></span>
       <a href="/cbdmed/?page_id=28" class="btn green bold">Conheça o processo de compra</a>
@@ -140,7 +140,7 @@
     <div class="col s12 l10 push-l1 margin40">
       <?php $depoimentos = new WP_Query( array( 'post_type' => 'depoimentos', 'posts_per_page' => '3' )); ?>
         <?php while ( $depoimentos->have_posts() ) : $depoimentos->the_post(); ?>
-          <div class="col s12 m4">
+          <div class="col s12 m6">
             <img src="<?php the_field('foto'); ?>" width="130" class="image-center" />
             <h3 class="margin20"><?php the_field('nome_do_cliente'); ?></h3>
             <p><?php the_field('texto_de_depoimento'); ?></p>

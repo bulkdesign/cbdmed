@@ -43,7 +43,7 @@
               $loop = new WP_Query( $args );
               if ( $loop->have_posts() ) {
                 while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                  <div class="col s4 push-s2 marginb50">
+                  <div class="col m4 push-m2 s12 marginb50">
                     <?php wc_get_template_part( 'content', 'product' ); ?>
                   </div>
                   <?php
@@ -61,11 +61,11 @@
 <?php $produtos = new WP_Query( array( 'post_type' => 'textos_produtos', 'posts_per_page' => '1' )); ?>
 <?php while ( $produtos->have_posts() ) : $produtos->the_post(); ?>
   <!-- PARA QUE SERVE -->
-  <div class="parallax-container">
+  <div class="parallax-container hauto">
     <div class="container">
       <div class="row">
         <!-- DESKTOP -->
-        <div class="col hide-on-small-only center margin140">
+        <div class="col hide-on-small-only center margin60">
           <h1 class="white-text bold"><?php the_field('titulo_1'); ?></h1>
           <span class="white-text"><?php the_field('texto_1'); ?></span>
         </div>
@@ -84,11 +84,11 @@
     </div>
   </div>
   <!-- O QUE É -->
-  <div class="parallax-container">
+  <div class="parallax-container hauto">
     <div class="container">
       <div class="row">
         <!-- DESKTOP -->
-        <div class="col hide-on-small-only center margin140">
+        <div class="col hide-on-small-only center margin60">
           <h1 class="white-text bold"><?php the_field('titulo_2'); ?></h1>
           <span class="white-text"><?php the_field('texto_2'); ?></span>
         </div>
@@ -107,11 +107,11 @@
     </div>
   </div>
   <!-- BENEFÍCIOS -->
-  <div class="parallax-container">
+  <div class="parallax-container hauto">
     <div class="container">
       <div class="row">
         <!-- DESKTOP -->
-        <div class="col hide-on-small-only center margin140">
+        <div class="col hide-on-small-only center margin60">
           <h1 class="white-text bold"><?php the_field('titulo_3'); ?></h1>
           <span class="white-text"><?php the_field('texto_3'); ?></span>
         </div>
@@ -130,11 +130,11 @@
     </div>
   </div>
   <!-- COMPOSIÇÃO -->
-  <div class="parallax-container">
+  <div class="parallax-container hauto">
     <div class="container">
       <div class="row">
         <!-- DESKTOP -->
-        <div class="col hide-on-small-only center margin140">
+        <div class="col hide-on-small-only center margin60">
           <h1 class="white-text bold"><?php the_field('titulo_4'); ?></h1>
           <span class="white-text"><?php the_field('texto_4'); ?></span>
         </div>

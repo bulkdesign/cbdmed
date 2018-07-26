@@ -14,6 +14,8 @@ textarea, input:not([type]), input[type=text]:not(.browser-default), input[type=
   border-radius: 2px;
   text-align: left;
   padding-left: 15px;
+  margin-top: 5px;
+  background-color: #FFFFFF
 }
 
 textarea, textarea:hover, textarea:active {
@@ -21,7 +23,6 @@ textarea, textarea:hover, textarea:active {
   border-radius: 2px;
   background: #FFFFFF;
   text-align: left;
-  width: 102.6% !important;
   box-shadow: none;
 }
 
@@ -63,17 +64,17 @@ textarea, textarea:hover, textarea:active {
 <div class="contato" style="background: url('<?php bloginfo('template_url'); ?>/images/contato.jpg');background-size:cover;background-repeat: no-repeat;">
   <h1 class="white-text bold">Contato</h1>
 </div>
+
+<?php $contato = new WP_Query( array( 'post_type' => 'textos_contato', 'posts_per_page' => '1' )); ?>
+<?php while ( $contato->have_posts() ) : $contato->the_post(); ?>
 <div class="container margin50 marginb50">
 	<div class="row">
     <div class="col s12">
       <div class="col s12 m6">
         <h1 class="left-align">Localização</h1>
-        <h3 class="left-align">FG Brasil</h3>
-        <p class="left-align">
-        Telefone: (41) 3015-5096<br>
-        E-mail: comercial@fgbrasil.com<br>
-        Rua Emiliano Perneta, 680 - Sala 1504 - Curitiba, Paraná</p>
-        <iframe class="left marginb50" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.03960417527!2d-49.28011848485485!3d-25.436939439396482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce473e85bfe3d%3A0xca5bd7889d3a178c!2sRua+Emiliano+Perneta%2C+680+-+Centro%2C+Curitiba+-+PR%2C+80420-080!5e0!3m2!1sen!2sbr!4v1531284795041" width="100%" height="360" frameborder="0" style="border:0"></iframe>
+        <h3 class="left-align"><?php the_field('nome_da_empresa'); ?></h3>
+        <?php the_field('informacoes'); ?>
+        <?php echo get_field('mapa'); ?>
   		</div>
       <div class="col s12 m6">
         <h1>Formulário</h1>
@@ -82,5 +83,7 @@ textarea, textarea:hover, textarea:active {
       </div>
   </div>
 </div>
+<?php endwhile; ?>
+<?php wp_reset_query(); ?>
 
 <?php get_footer('home'); ?>

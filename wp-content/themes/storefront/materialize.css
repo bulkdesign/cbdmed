@@ -5977,7 +5977,7 @@ label {
 }
 
 /* Text inputs */
-input:not([type]),
+/*input:not([type]),
 input[type=text]:not(.browser-default),
 input[type=password]:not(.browser-default),
 input[type=email]:not(.browser-default),
@@ -6006,7 +6006,7 @@ textarea.materialize-textarea {
           box-sizing: content-box;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-}
+}*/
 
 input:not([type]):disabled, input:not([type])[readonly="readonly"],
 input[type=text]:not(.browser-default):disabled,

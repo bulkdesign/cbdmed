@@ -45,7 +45,7 @@ h3.woocommerce-loop-product__title {
 
 #payment .payment_methods>.wc_payment_method>label {
 	display: block !important;
-	padding: 0 !important;
+	padding: 0 30px !important;
 }
 
 #shipping_method [type="radio"]:not(:checked) + label, [type="radio"]:checked + label {
